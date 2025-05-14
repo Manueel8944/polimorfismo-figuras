@@ -26,7 +26,7 @@ public class Gestor {
     public void eliminarFigura(String nombre) {
         boolean encontrada = false;
         for (int i = 0; i < listaFiguras.size(); i++) {
-            if (listaFiguras.get(i).getNombre() == nombre) {
+            if (listaFiguras.get(i).getNombre().equals(nombre)) {
                 System.out.println("Figura eliminada: " + listaFiguras.get(i).getNombre());
                 listaFiguras.remove(i);
                 encontrada = true;
@@ -114,7 +114,7 @@ public class Gestor {
     public void moverFigura(String nombre){
         boolean encontrada = false;
         for (int i = 0; i < listaFiguras.size(); i++) {
-            if (listaFiguras.get(i).getNombre() == nombre) {
+            if (listaFiguras.get(i).getNombre().equals(nombre)) {
                 System.out.println("Figura movida: " + listaFiguras.get(i).getNombre());
                 listaFiguras.get(i).mover();
                 encontrada = true;

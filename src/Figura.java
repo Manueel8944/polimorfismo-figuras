@@ -1,4 +1,4 @@
-public class Figura {
+public abstract class Figura {
     public String nombre;
     public String color;
     public double posx;
@@ -43,13 +43,9 @@ public class Figura {
         this.posy = posy;
     }
 
-    public double calcularArea() {
-        return 0;
-    }
+    public abstract double calcularArea();
 
-    public double calcularPerimetro() {
-        return 0;
-    }
+    public abstract double calcularPerimetro();
 
     public void mover() {
         double aux = posx;
